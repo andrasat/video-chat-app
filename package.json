@@ -1,0 +1,11 @@
+{
+  "name": "video-chat-fullstack-app",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.0.2"
+  }
+}
