@@ -2,10 +2,20 @@
   "name": "video-chat-fullstack-app",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "src/*"
   ],
-  "dependencies": {},
+  "scripts": {
+    "prepare": "husky || true",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,jsx,tsx,json,jsonc}": "biome check --apply --no-errors-on-unmatched"
+  },
   "devDependencies": {
-    "lerna": "^8.0.2"
-  }
+    "@biomejs/biome": "1.5.3",
+    "husky": "^9.0.11",
+    "lerna": "^8.0.2",
+    "lint-staged": "^15.2.2"
+  },
+  "packageManager": "yarn@4.1.0"
 }

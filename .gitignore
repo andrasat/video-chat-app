@@ -3,3 +3,7 @@ node_modules/
 # npm
 package-lock.json
 .nx/cache
+
+# yarn
+.yarn/unplugged
+.yarn/build-state.yml
